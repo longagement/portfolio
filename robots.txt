@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# 站点正文可以抓取；但 assets/sources/ 下是原始文稿、报告与证明材料，
+# 其中部分含有第三方姓名（校友访谈、服务评价表等），不希望被搜索引擎收录。
+# 注：robots.txt 只约束爬虫，不阻止直接点链接下载。
+#
+# 注意：不要屏蔽 assets/js/data.js —— 全站内容由它渲染，
+#      屏蔽后搜索引擎拿不到任何正文，等于自断 SEO。
+Disallow: /assets/sources/
+
+# 部署域名：https://longagement.github.io/portfolio（改地址时重跑 python tools/set-domain.py <新地址>）
+Sitemap: https://longagement.github.io/portfolio/sitemap.xml

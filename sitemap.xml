@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 部署域名：https://longagement.github.io/portfolio
+     改地址时重跑：python tools/set-domain.py <新地址>
+     会自动同步本文件、sitemap.xml / robots.txt / 404.html -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://longagement.github.io/portfolio/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>

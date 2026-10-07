@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>页面走丢了 · 吴欣怡</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .lost { min-height: 100vh; display: grid; place-items: center; padding: 48px 24px; text-align: center; }
+    .lost-inner { max-width: 520px; }
+    .lost-code {
+      font-size: clamp(72px, 16vw, 132px); font-weight: 600;
+      letter-spacing: -.05em; line-height: 1; color: var(--ink);
+    }
+    .lost-code em { font-style: normal; color: var(--accent); }
+    .lost-title { margin-top: 20px; font-size: clamp(22px, 3.4vw, 30px); }
+    .lost-desc { margin-top: 14px; color: var(--slate); font-size: 16px; }
+    .lost-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 32px; }
+    .lost-links { margin-top: 34px; padding-top: 22px; border-top: 1px solid var(--hairline-soft); }
+    .lost-links ul { display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: center; }
+    .lost-links a { font-size: 14px; color: var(--slate); }
+    .lost-links a:hover { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <main class="lost">
+    <div class="lost-inner">
+      <p class="lost-code">4<em>0</em>4</p>
+      <h1 class="lost-title">这页走丢了</h1>
+      <p class="lost-desc">
+        你要找的地址不存在，或者已经被移动了。<br>
+        不如回首页，从作品集重新看起。
+      </p>
+
+      <div class="lost-actions">
+        <a class="btn btn-primary" href="/portfolio/index.html">回到首页</a>
+        <a class="btn btn-ghost" href="/portfolio/index.html#work">看看作品</a>
+      </div>
+
+      <nav class="lost-links" aria-label="站内快捷入口">
+        <ul>
+          <li><a href="/portfolio/index.html#practice">实践经历</a></li>
+          <li><a href="/portfolio/index.html#media">新媒体成果</a></li>
+          <li><a href="/portfolio/index.html#about">关于我</a></li>
+          <li><a href="/portfolio/index.html#contact">联系我</a></li>
+        </ul>
+      </nav>
+    </div>
+  </main>
+</body>
+</html>
