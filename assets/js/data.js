@@ -244,8 +244,7 @@ window.SITE_DATA = {
           "输出活动策划方案 5 份"
         ],
         gallery: [
-          { src: "assets/images/works/media-2.jpg", alt: "活动海报设计选样：双选会、光影魔法课摄影讲座、日语成长旋律专题" },
-          { src: "assets/images/works/media-4.jpg", orient: "portrait", alt: "聘书：获聘外国语学院学生会（筹）新媒体中心干事，任期 2024.09 — 2025.09" }
+          { src: "assets/images/works/media-2.jpg", alt: "活动海报设计选样：双选会、光影魔法课摄影讲座、日语成长旋律专题" }
         ]
       }
     },
@@ -639,6 +638,14 @@ window.SITE_DATA = {
       { value: "5", label: "份策划与统筹文档" }
     ],
     blocks: [
+      {
+        title: "任职聘任",
+        desc: "内容工作的起点：经学院学生会（筹）选聘进入新媒体中心任干事，聘期一年；此后转入组织实践部并接任部长，统筹团风采系列活动与毕业晚会。",
+        gallery: [
+          { src: "assets/images/works/media-4.jpg", orient: "portrait", alt: "聘书：获聘外国语学院学生会（筹）新媒体中心干事，任期 2024.09 — 2025.09" }
+        ],
+        photoNote: "聘书原件实拍（中英双语）：兹聘请你为外国语学院学生会（筹）新媒体中心干事，任期一年，自 2024 年 9 月至 2025 年 9 月。"
+      },
       {
         title: "新闻稿撰写",
         desc: "覆盖学院重大活动、校友访谈、学术讲座与校园生活，形成稳定的供稿节奏与统一文风。下方为各篇文稿预览，点击可打开原文。",
