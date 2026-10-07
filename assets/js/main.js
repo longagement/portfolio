@@ -332,12 +332,14 @@
 
       const actions = el("div", "res-actions");
       if (r.path) {
-        const open = el("a", "res-open", r.kind === "video" ? "点击观看 ↗" : "打开本地文件 ↗");
+        // 网页类素材（如素材库 HTML）直接在浏览器里打开，文案区别于 PDF/图片等本地文件
+        const actionText = r.kind === "video" ? "点击观看" : r.kind === "html" ? "在线查看" : "打开本地文件";
+        const open = el("a", "res-open", actionText + " ↗");
         open.href = fileUrl(r.path);
         open.target = "_blank";
         open.rel = "noopener noreferrer";
         open.title = r.path;
-        open.setAttribute("aria-label", (r.kind === "video" ? "点击观看：" : "打开本地文件：") + r.label);
+        open.setAttribute("aria-label", actionText + "：" + r.label);
         actions.appendChild(open);
 
         // 「复制路径」只对你自己有用：本地 file:// 打开时可一键取用；

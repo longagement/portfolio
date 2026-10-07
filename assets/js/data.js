@@ -416,10 +416,11 @@ window.SITE_DATA = {
         { k: "价值升维", v: "背负文化 → 融通文化" },
         { k: "金句", v: "Verständnis ist kein Visum für die Begegnung.（理解不是相遇的签证）" }
       ],
-      deliverables: ["13 页中德双语 PPT", "定稿演讲稿", "两版拍摄成片", "15 个答辩问题预案"],
+      deliverables: ["13 页中德双语 PPT", "定稿演讲稿", "两版拍摄成片", "15 个答辩问题预案", "22 个板块的中德文化交流素材库"],
       sources: ["中华人民共和国外交部", "同济大学", "Pew Research Center", "新华网"],
       resources: [
-        { label: "德语之星 · 飞书导出 PDF", kind: "doc", path: "assets/sources/competitions/德语之星.pdf", note: "含最终安排、13 页 PPT 结构与 15 个答辩问题" }
+        { label: "德语之星 · 飞书导出 PDF", kind: "doc", path: "assets/sources/competitions/德语之星.pdf", note: "含最终安排、13 页 PPT 结构与 15 个答辩问题" },
+        { label: "中德文化交流素材库 · 完整整合版", kind: "html", path: "assets/sources/competitions/中德文化交流素材库_完整整合版.html", note: "团队共建备赛资料：22 个主题板块、中德对照的事例与论据（教育、友好城市、体育、企业产业、影视媒体、汉学与翻译等），附论据可视化年报与数据卡片" }
       ],
       workId: "german-star"
     },
@@ -643,7 +644,7 @@ window.SITE_DATA = {
           { src: "assets/images/shots/news-01.png", alt: "2024外院学生会换届仪式暨新成员见面会新闻稿（文稿预览）", link: "assets/sources/media-work/2024外院学生会换届仪式暨新成员见面会新闻稿(1)(1).docx" },
           { src: "assets/images/shots/news-02.png", alt: "【榜样校友说】张子璇：不设限的青春（文稿预览）", link: "assets/sources/media-work/【榜样校友说】——张子璇：不设限的青春.docx" },
           { src: "assets/images/shots/news-03.png", alt: "优秀校友访谈新闻稿—冯金梅（文稿预览）", link: "assets/sources/media-work/优秀校友访谈新闻稿—冯金梅(1).docx" },
-          { src: "assets/images/shots/news-04.png", alt: "光影魔法课第三期新闻稿（文稿预览；原文件为 11MB 的 .doc，体积过大未随站发布）" },
+          { src: "assets/images/shots/news-04.png", alt: "光影魔法课第三期新闻稿（文稿预览；原文件体积过大未随站发布）" },
           { src: "assets/images/shots/news-05.png", alt: "军训送清凉新闻稿（文稿预览）", link: "assets/sources/media-work/军训送清凉.docx" },
           { src: "assets/images/shots/news-06.png", alt: "创新就业讲座新闻稿（文稿预览）", link: "assets/sources/media-work/创新就业讲座新闻稿.docx" },
           { src: "assets/images/shots/news-07.png", alt: "年终总结文案（文稿预览）", link: "assets/sources/media-work/年终总结文案最终版.docx" }
