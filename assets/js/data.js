@@ -80,7 +80,7 @@ window.SITE_DATA = {
           "组委会盖章《赛会志愿者服务证书》（2025.12 签发）"
         ],
         gallery: [
-          { src: "assets/images/works/national-games.jpg", alt: "十五运会赛会志愿者服务证书（组委会盖章原件翻拍）" },
+          { src: "assets/images/works/national-games.jpg", orient: "portrait", alt: "十五运会赛会志愿者服务证书（组委会盖章原件翻拍）" },
           { src: "assets/images/works/national-games-2.jpg", orient: "portrait", alt: "志愿服务证书实拍（坪山区委版）：感谢艺术体操赛会志愿服务 · 共青团深圳市坪山区委员会 2026.01 颁发" }
         ],
         resources: [
@@ -183,7 +183,7 @@ window.SITE_DATA = {
           "熟悉 CE / CPC / CPSIA 等多类跨境合规报告标准"
         ],
         gallery: [
-          { src: "assets/images/works/sgs.jpg", fallback: "assets/images/works/sgs.svg", alt: "SGS 实习留影：标识墙前，佩戴实习工牌" },
+          { src: "assets/images/works/sgs.jpg", orient: "portrait", fallback: "assets/images/works/sgs.svg", alt: "SGS 实习留影：标识墙前，佩戴实习工牌" },
           { src: "assets/images/works/sgs-2.jpg", orient: "portrait", alt: "SGS 实习留影：公司标识墙前的手势合影" }
         ]
       }
@@ -271,7 +271,7 @@ window.SITE_DATA = {
           "持有蓝信封志愿服务证明（通信大使）"
         ],
         gallery: [
-          { src: "assets/sources/practice/蓝信封志愿时数卡.jpg", alt: "蓝信封行动志愿服务时数卡：20 封往来书信 · 累计 33 小时志愿服务" },
+          { src: "assets/sources/practice/蓝信封志愿时数卡.jpg", orient: "portrait", alt: "蓝信封行动志愿服务时数卡：20 封往来书信 · 累计 33 小时志愿服务" },
           { src: "assets/sources/practice/蓝信封志愿服务证书.jpg", orient: "portrait", alt: "蓝信封行动志愿服务证书：通信大使（2025.03 — 2026.06）" }
         ],
         resources: [
@@ -463,7 +463,7 @@ window.SITE_DATA = {
   practice: {
     intro: "从国家级德语赛事、连续两年的「百千万工程」三下乡，到跨境合规实习与志愿服务——这一节汇集我作为「内容生产者 + 项目统筹者」，在跨文化与跨境场景下的几段完整实践。每段都展开记录背景、我的角色与最终交付。",
     note: "本页图片与报告已随站点打包（相对路径，点开即看）；三下乡视频体积过大，未随站发布，下方条目仅作留档占位——后续把成片托管到视频平台后，回到 data.js 给对应条目填回 path 即可恢复「点击观看」。",
-    extra: ["national-games", "sgs", "lanxin", "teach-volunteer"],
+    extra: ["sgs", "national-games", "lanxin", "teach-volunteer"],
     years: [
       {
         year: "2026",

@@ -656,7 +656,10 @@
     const box = $("#practice-extra");
     if (!box) return;
     const ids = (DATA.practice && DATA.practice.extra) || [];
-    const works = (DATA.works || []).filter((w) => ids.indexOf(w.id) !== -1);
+    // 以 extra 列表的顺序为准（而非 works 数组自身的顺序），方便按需调整展示先后
+    const works = (DATA.works || [])
+      .filter((w) => ids.indexOf(w.id) !== -1)
+      .sort((a, b) => ids.indexOf(a.id) - ids.indexOf(b.id));
 
     works.forEach((w, i) => {
       const card = el("article", "comp-card");
