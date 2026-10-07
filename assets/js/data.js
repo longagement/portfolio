@@ -80,7 +80,8 @@ window.SITE_DATA = {
           "组委会盖章《赛会志愿者服务证书》（2025.12 签发）"
         ],
         gallery: [
-          { src: "assets/images/works/national-games.jpg", alt: "十五运会赛会志愿者服务证书（组委会盖章原件翻拍）" }
+          { src: "assets/images/works/national-games.jpg", alt: "十五运会赛会志愿者服务证书（组委会盖章原件翻拍）" },
+          { src: "assets/images/works/national-games-2.jpg", orient: "portrait", alt: "志愿服务证书实拍（坪山区委版）：感谢艺术体操赛会志愿服务 · 共青团深圳市坪山区委员会 2026.01 颁发" }
         ],
         resources: [
           { label: "赛会志愿者服务证书（盖章原件）", kind: "doc", path: "assets/sources/practice/十五运会赛会志愿者服务证书.jpg", note: "十五运会 + 残特奥会组委会盖章 · 2025.12" }
@@ -243,7 +244,8 @@ window.SITE_DATA = {
           "输出活动策划方案 5 份"
         ],
         gallery: [
-          { src: "assets/images/works/media-2.jpg", alt: "活动海报设计选样：双选会、光影魔法课摄影讲座、日语成长旋律专题" }
+          { src: "assets/images/works/media-2.jpg", alt: "活动海报设计选样：双选会、光影魔法课摄影讲座、日语成长旋律专题" },
+          { src: "assets/images/works/media-4.jpg", orient: "portrait", alt: "聘书：获聘外国语学院学生会（筹）新媒体中心干事，任期 2024.09 — 2025.09" }
         ]
       }
     },
