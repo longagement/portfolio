@@ -302,6 +302,13 @@
     return img;
   }
 
+  // 图集缩略图：竖构图照片保留竖屏比例（数据里标 orient: "portrait"）
+  function galleryImage(item) {
+    const node = localImage(item.src, item.fallback, item.alt, "thumb");
+    if (item.orient === "portrait") node.classList.add("is-portrait");
+    return node;
+  }
+
   function fallbackCopy(text, done) {
     const ta = document.createElement("textarea");
     ta.value = text;
@@ -489,7 +496,7 @@
         wrap.style.marginTop = "24px";
         wrap.appendChild(el("h4", "block-sub", "过程材料"));
         const grid = el("div", "thumb-grid");
-        gallery.forEach((img) => grid.appendChild(localImage(img.src, img.fallback, img.alt, "thumb")));
+        gallery.forEach((img) => grid.appendChild(galleryImage(img)));
         wrap.appendChild(grid);
         card.appendChild(wrap);
       }
@@ -624,7 +631,7 @@
         if ((t.gallery || []).length) {
           section("现场图集", () => {
             const g = el("div", "thumb-grid");
-            t.gallery.forEach((img) => g.appendChild(localImage(img.src, img.fallback, img.alt, "thumb")));
+            t.gallery.forEach((img) => g.appendChild(galleryImage(img)));
             return g;
           });
         }
@@ -707,7 +714,7 @@
         sec.style.marginTop = "20px";
         sec.appendChild(el("h4", "block-sub", "现场图集"));
         const g = el("div", "thumb-grid");
-        d.gallery.forEach((img) => g.appendChild(localImage(img.src, img.fallback, img.alt, "thumb")));
+        d.gallery.forEach((img) => g.appendChild(galleryImage(img)));
         sec.appendChild(g);
         card.appendChild(sec);
       }
@@ -787,7 +794,7 @@
         const g = el("div", "thumb-grid");
         g.style.marginTop = "18px";
         b.gallery.forEach((img) => {
-          const node = localImage(img.src, img.fallback, img.alt, "thumb");
+          const node = galleryImage(img);
           if (img.link) {
             node.classList.add("is-doc");
             const a = el("a", "thumb-link");

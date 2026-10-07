@@ -85,6 +85,7 @@ npx serve .
     highlights: ["亮点一", "亮点二"],
     // gallery：当该 id 被某项竞赛的 workId 引用时，会渲染成竞赛卡片的「过程材料」图集
     gallery: [{ src: "assets/images/works/my-2.jpg",
+                orient: "portrait",                          // 可选：竖构图照片标此项，缩略图按 2:3 竖屏呈现
                 fallback: "assets/images/works/my-2.svg",   // 可选兜底图
                 alt: "图片描述" }]
   }
@@ -137,12 +138,18 @@ npx serve .
 | `assets/images/avatar.jpg` | 竖幅人像（当前 1280×1920，2:3），整张呈现、不裁剪 |
 | `assets/images/works/*.jpg` | 4:3（如 1600×1200）最稳，网格里按 `object-fit: cover` 裁切 |
 | `assets/images/works/*.svg` | 同名占位图，作为 `coverFallback` / `fallback` 兜底，无需改尺寸 |
+| 图集里的竖构图照片 | 保持竖屏比例（2:3，如 853×1280），并在数据项里标 `orient: "portrait"` |
 
-替换时注意三点：
+替换时注意四点：
 
 1. 图片格式换了，**路径后缀也要跟着改**（在 `data.js` 里改 `cover` / `gallery.src`）；
 2. **务必同步更新 `coverAlt`**——那是屏幕阅读器读出来的文字；
-3. 若新图尺寸与原图差异较大，顺手更新对应的 `coverFallback`，让加载失败时仍能优雅降级。
+3. 若新图尺寸与原图差异较大，顺手更新对应的 `coverFallback`，让加载失败时仍能优雅降级；
+4. **竖构图照片标 `orient: "portrait"`**：否则会被按 4:3 横版压扁裁切。加了标记后缩略图按 2:3 竖屏完整呈现，`object-position: 50% 40%` 保证人物头部不被切。横构图照片无需标注。
+
+> **相机原片方向提醒**：部分相机导出的照片是「竖构图存成横版、靠 EXIF 旋转标记」。
+> 这类图片在网站里会躺倒 90°，需要先物理转正再放进 `assets/sources/`。
+> 本站 `我的摄影照片` 已统一转正为 853×1280 竖屏，原始文件备份在 `.workbuddy/originals/`（不随站发布）。
 
 ---
 

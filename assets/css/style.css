@@ -317,6 +317,10 @@ button { font: inherit; color: inherit; }
 /* 竖构图封面裁切焦点：SGS 照片偏上保留标识墙 Logo；证书微下移保留盖章与落款 */
 img[src*="works/national-games"] { object-position: 50% 52%; }
 img[src*="works/sgs."] { object-position: 50% 30%; }
+/* 竖版文档封面：保住顶部标题（居中会裁掉标题只留正文中段） */
+img[src*="works/german-star.jpg"] { object-position: 50% 8%; }
+/* 蓝信封时数卡封面：顶部是姓名与通信大使身份，数据卡随其后 */
+img[src*="蓝信封志愿时数卡"] { object-position: 50% 12%; }
 .work-year {
   position: absolute; top: 14px; left: 14px;
   padding: 5px 11px; border-radius: var(--r-pill);
@@ -554,14 +558,24 @@ img[src*="works/sgs."] { object-position: 50% 30%; }
   width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
 }
 
-.thumb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 12px; }
+.thumb-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 12px;
+  align-items: start;   /* 横竖混排时各自保持原始比例，互不拉伸 */
+}
 .thumb {
   width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
   border-radius: var(--r-md); background: var(--surface);
   border: 1px solid var(--hairline-soft);
 }
+/* 竖构图照片：保持原始 2:3 竖屏比例，整张完整呈现、不裁切
+   （data.js 里标 orient: "portrait"，与相机原片比例一致） */
+.thumb.is-portrait { aspect-ratio: 2 / 3; object-position: 50% 40%; }
 /* 文稿预览图：竖版整页呈现，不裁切 */
 .thumb.is-doc { aspect-ratio: 3 / 4; object-fit: contain; background: #fff; border-color: var(--hairline); }
+/* assets/images/shots/ 下统一是文稿预览图（3:4 竖版），即便某一条没有原文件链接
+   （拿不到 .is-doc），也按整页呈现，避免被 4:3 裁掉正文 */
+.thumb-grid img[src*="/shots/"] { aspect-ratio: 3 / 4; object-fit: contain; background: #fff; }
 .thumb-link {
   display: block; border-radius: var(--r-md); overflow: hidden;
   transition: transform .2s var(--ease), box-shadow .2s var(--ease);

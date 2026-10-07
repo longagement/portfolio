@@ -119,7 +119,7 @@ window.SITE_DATA = {
         ],
         gallery: [
           { src: "assets/images/works/german-star.jpg", fallback: "assets/images/works/german-star.svg", alt: "演讲稿定稿《承载歌声的翅膀，共建友谊的桥梁》" },
-          { src: "assets/images/works/german-star-2.jpg", fallback: "assets/images/works/german-star-2.svg", alt: "答辩准备清单：主题动机与问题的中德双语预案" }
+          { src: "assets/images/works/german-star-2.jpg", orient: "portrait", fallback: "assets/images/works/german-star-2.svg", alt: "答辩准备清单：主题动机与问题的中德双语预案" }
         ]
       }
     },
@@ -150,9 +150,10 @@ window.SITE_DATA = {
         ],
         gallery: [
           { src: "assets/images/works/german-video-cover.jpg", fallback: "assets/images/works/german-video.svg", alt: "参评宣传片《华南新声，客音无界》封面：探寻客家话发展新可能" },
-          { src: "assets/images/works/german-video.jpg", fallback: "assets/images/works/german-video.svg", alt: "选题头脑风暴手稿：候选方向、参考文献与论证路径" },
-          { src: "assets/images/works/german-video-2.jpg", fallback: "assets/images/works/german-video.svg", alt: "结构脑图：是什么—为什么—怎么做的论证链" },
-          { src: "assets/images/works/german-video-3.jpg", fallback: "assets/images/works/german-video.svg", alt: "数据溯源清单：粤语与客家话定义及引用来源" }
+          { src: "assets/images/works/german-video.jpg", orient: "portrait", fallback: "assets/images/works/german-video.svg", alt: "选题头脑风暴手稿：候选方向、参考文献与论证路径" },
+          { src: "assets/images/works/german-video-2.jpg", orient: "portrait", fallback: "assets/images/works/german-video.svg", alt: "结构脑图：是什么—为什么—怎么做的论证链" },
+          { src: "assets/images/works/german-video-3.jpg", orient: "portrait", fallback: "assets/images/works/german-video.svg", alt: "数据溯源清单：粤语与客家话定义及引用来源" },
+          { src: "assets/images/works/german-video-4.jpg", orient: "portrait", alt: "参赛期间与同伴的留影" }
         ]
       }
     },
@@ -182,7 +183,7 @@ window.SITE_DATA = {
         ],
         gallery: [
           { src: "assets/images/works/sgs.jpg", fallback: "assets/images/works/sgs.svg", alt: "SGS 实习留影：标识墙前，佩戴实习工牌" },
-          { src: "assets/images/works/sgs-2.jpg", fallback: "assets/images/works/sgs-2.svg", alt: "个人操作 SOP 与易错点清单（示意封面）" }
+          { src: "assets/images/works/sgs-2.jpg", orient: "portrait", alt: "SGS 实习留影：公司标识墙前的手势合影" }
         ]
       }
     },
@@ -212,7 +213,7 @@ window.SITE_DATA = {
         ],
         gallery: [
           { src: "assets/images/works/countryside.jpg", alt: "社区图书室走访：与居民比赞合影" },
-          { src: "assets/images/works/countryside-2.jpg", alt: "江岭社区党建书吧调研走访现场" },
+          { src: "assets/images/works/countryside-2.jpg", orient: "portrait", alt: "江岭社区党建书吧调研走访现场" },
           { src: "assets/images/works/countryside-3.jpg", alt: "双语特色环保话剧排练过程留影" }
         ]
       }
@@ -270,7 +271,7 @@ window.SITE_DATA = {
         ],
         gallery: [
           { src: "assets/sources/practice/蓝信封志愿时数卡.jpg", alt: "蓝信封行动志愿服务时数卡：20 封往来书信 · 累计 33 小时志愿服务" },
-          { src: "assets/sources/practice/蓝信封志愿服务证书.jpg", alt: "蓝信封行动志愿服务证书：通信大使（2025.03 — 2026.06）" }
+          { src: "assets/sources/practice/蓝信封志愿服务证书.jpg", orient: "portrait", alt: "蓝信封行动志愿服务证书：通信大使（2025.03 — 2026.06）" }
         ],
         resources: [
           { label: "蓝信封志愿服务证书", kind: "doc", path: "assets/sources/practice/蓝信封志愿服务证书.jpg", note: "通信大使 · 33 小时志愿服务" }
@@ -401,7 +402,7 @@ window.SITE_DATA = {
         { date: "10.01", item: "演讲稿定稿" },
         { date: "10.05", item: "13 页 PPT 交付" },
         { date: "10.07", item: "第一次拍摄" },
-        { date: "10.08", item: "第二次拍摄：在首版基础上补拍完善、交付稿件（非推翻重拍）" },
+        { date: "10.08", item: "第二次拍摄：在首版基础上补拍完善、交付稿件" },
         { date: "10.09", item: "成片输出" },
         { date: "10.12", item: "答辩预演" },
         { date: "10.15", item: "成果交付" },
@@ -600,9 +601,15 @@ window.SITE_DATA = {
               "10 余名社区儿童与 10 余户家庭参与活动并在社交平台自发传播戏剧谷"
             ],
             gallery: [
+              { src: "assets/sources/practice/lingnan/岭南融梦队在长守戏剧谷前合影.jpg", fallback: "assets/images/works/countryside.svg", alt: "岭南融梦队在长守戏剧谷招商服务办公室前合影，两侧为「百千万工程突击队」队旗" },
+              { src: "assets/sources/practice/lingnan/实践队员在社区党群服务中心了解村史.jpg", fallback: "assets/images/works/countryside.svg", alt: "在社区党群服务中心宣传栏前了解长守村村史与活化历程" },
+              { src: "assets/sources/practice/lingnan/实践队员走访长守村道.jpg", fallback: "assets/images/works/countryside-2.svg", alt: "走访长守村村道，实地观察文旅资源分布" },
+              { src: "assets/sources/practice/lingnan/实践队员在社区图书室开展访谈调研.jpg", fallback: "assets/images/works/countryside-2.svg", alt: "在社区图书室与社区工作者开展访谈调研" },
               { src: "assets/sources/practice/lingnan/实践队员环保双语课程.jpg", fallback: "assets/images/works/edu.svg", alt: "双语环保课堂现场" },
               { src: "assets/sources/practice/lingnan/实践队员排练双语特色环保话剧过程留影.jpg", fallback: "assets/images/works/countryside.svg", alt: "双语环保话剧排练现场" },
-              { src: "assets/sources/practice/lingnan/实践队员与当地志愿者共同清理河道.jpg", fallback: "assets/images/works/countryside-2.svg", alt: "与当地志愿者共同清理河道" }
+              { src: "assets/sources/practice/lingnan/双语话剧《森林小卫士》演出现场.jpg", fallback: "assets/images/works/edu.svg", alt: "双语话剧《森林小卫士》演出现场，孩子们手持树叶道具与垃圾分类造型合影" },
+              { src: "assets/sources/practice/lingnan/实践队员与当地志愿者共同清理河道.jpg", fallback: "assets/images/works/countryside-2.svg", alt: "与当地志愿者共同清理河道" },
+              { src: "assets/sources/practice/lingnan/实践队员在客家老屋前合影.jpg", fallback: "assets/images/works/countryside.svg", alt: "实践队员在客家老屋前合影" }
             ],
             resources: [
               { label: "长守宣传片", kind: "video", path: "", note: "2 分 58 秒 · 已交付社区" },
@@ -668,19 +675,20 @@ window.SITE_DATA = {
           { src: "assets/sources/media-work/招生通知.png", fallback: "assets/images/works/media.svg", alt: "招生通知封面" },
           { src: "assets/sources/media-work/蓝色渐变热点新闻微信公众号封面 (1).png", fallback: "assets/images/works/media.svg", alt: "热点新闻公众号封面" },
           { src: "assets/images/works/media-2.jpg", fallback: "assets/images/works/media.svg", alt: "活动海报设计选样：双选会、光影魔法课摄影讲座、日语成长旋律专题" },
-          { src: "assets/images/works/media-3.jpg", fallback: "assets/images/works/media.svg", alt: "「光影魔法课」摄影技巧提升系列讲座海报（第一期）" }
+          { src: "assets/images/works/media-3.jpg", orient: "portrait", fallback: "assets/images/works/media.svg", alt: "「光影魔法课」摄影技巧提升系列讲座海报（第一期）" }
         ]
       },
       {
         title: "活动摄影",
-        desc: "承担学院活动、晚会与外景采风的摄影摄像，为新媒体平台持续供给一手图文素材。",
+        desc: "承担学院活动、晚会与外景采风的摄影摄像，为新媒体平台持续供给一手图文素材。竖构图照片按原始方向竖屏呈现，不做横向裁切。",
         gallery: [
-          { src: "assets/sources/media-work/我的摄影照片/880A2346.JPG", fallback: "assets/images/works/media.svg", alt: "学院活动摄影作品" },
-          { src: "assets/sources/media-work/我的摄影照片/880A2355.JPG", fallback: "assets/images/works/media.svg", alt: "学院活动摄影作品" },
-          { src: "assets/sources/media-work/我的摄影照片/880A2368.JPG", fallback: "assets/images/works/media.svg", alt: "学院活动摄影作品" },
-          { src: "assets/sources/media-work/我的摄影照片/880A2379.JPG", fallback: "assets/images/works/media.svg", alt: "学院活动摄影作品" }
+          { src: "assets/sources/media-work/我的摄影照片/紫荆花树下的独照.jpg", orient: "portrait", fallback: "assets/images/works/media.svg", alt: "紫荆花树下的演员独照（校园外景采风）" },
+          { src: "assets/sources/media-work/我的摄影照片/两位演员的合影.jpg", orient: "portrait", fallback: "assets/images/works/media.svg", alt: "两位演员在花树下的合影" },
+          { src: "assets/sources/media-work/我的摄影照片/舞台演出-群舞造型.jpg", fallback: "assets/images/works/media.svg", alt: "晚会舞台上的群舞造型瞬间" },
+          { src: "assets/sources/media-work/我的摄影照片/校园活动现场-卡片互动.jpg", fallback: "assets/images/works/media.svg", alt: "校园活动现场的卡片互动" },
+          { src: "assets/sources/media-work/我的摄影照片/舞台群像与标语.jpg", fallback: "assets/images/works/media.svg", alt: "舞台群像与手持标语" }
         ],
-        photoNote: "以上为校内活动与外景采风选片；完整原始素材（含个人摄影作品）可在面谈时提供。"
+        photoNote: "以上为选片（5 张）：外景人像、晚会舞台与活动现场各若干，横竖构图均按原始方向呈现；完整原始素材可在面谈时提供。"
       },
       {
         title: "策划案",
