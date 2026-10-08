@@ -95,6 +95,10 @@
     const grid = $("#work-grid");
     const works = DATA.works || [];
 
+    // 作品总数直接取自数据源，避免 index.html 里写死的数字与实际条目数脱节
+    const countEl = $("#work-count");
+    if (countEl) countEl.textContent = works.length;
+
     works.forEach((work, index) => {
       const li = el("li");
       const card = el("article", "work-card");
