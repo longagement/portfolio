@@ -126,7 +126,7 @@ window.SITE_DATA = {
     },
     {
       id: "german-video",
-      title: "外教社杯 · 全国德语短视频比赛",
+      title: "德语视频 · 吴欣怡 制作的《华南新声，客音无界》参加外教社杯短视频比赛",
       summary: "作品《语守本土，译向世界》：用德语讲述普通话与岭南方言（粤语 & 客家话）的共生保护，并构想客家话语料库。",
       category: "德语内容",
       year: "2026",
@@ -420,6 +420,7 @@ window.SITE_DATA = {
       deliverables: ["13 页中德双语 PPT", "定稿演讲稿", "两版拍摄成片", "15 个答辩问题预案", "22 个板块的中德文化交流素材库"],
       sources: ["中华人民共和国外交部", "同济大学", "Pew Research Center", "新华网"],
       resources: [
+        { label: "参赛 PPT 完整版", kind: "doc", path: "assets/sources/competitions/德语之星参赛PPT.pdf", note: "《承载歌声的翅膀，共建友谊的桥梁》决赛演示文稿，由 17.7 MB 原始 PPT 导出为 14 页 PDF，浏览器内可直接翻看" },
         { label: "德语之星 · 飞书导出 PDF", kind: "doc", path: "assets/sources/competitions/德语之星.pdf", note: "含最终安排、13 页 PPT 结构与 15 个答辩问题" },
         { label: "中德文化交流素材库 · 完整整合版", kind: "html", path: "assets/sources/competitions/中德文化交流素材库_完整整合版.html", note: "团队共建备赛资料：22 个主题板块、中德对照的事例与论据（教育、友好城市、体育、企业产业、影视媒体、汉学与翻译等），附论据可视化年报与数据卡片" }
       ],
@@ -462,7 +463,7 @@ window.SITE_DATA = {
   /* ---------- 三下乡社会实践（分年度、分队伍） ---------- */
   practice: {
     intro: "从国家级德语赛事、连续两年的「百千万工程」三下乡，到跨境合规实习与志愿服务——这一节汇集我作为「内容生产者 + 项目统筹者」，在跨文化与跨境场景下的几段完整实践。每段都展开记录背景、我的角色与最终交付。",
-    note: "本页图片与报告已随站点打包（相对路径，点开即看）；三下乡视频体积过大，未随站发布，下方条目仅作留档占位——后续把成片托管到视频平台后，回到 data.js 给对应条目填回 path 即可恢复「点击观看」。",
+    note: "本页图片与文档已随站点打包（相对路径，点开即看）；成片视频体积过大，未随站发布——把视频传到 B 站 / 腾讯视频等平台后，在 data.js 对应条目补一行 embed: \"播放器地址\"，即可在站内直接播放。",
     extra: ["sgs", "national-games", "lanxin", "teach-volunteer"],
     years: [
       {
@@ -490,8 +491,7 @@ window.SITE_DATA = {
               { group: "队长", members: "吴欣怡（带队老师：蒋拓）", desc: "全流程统筹、每日计划与人员调配；对接社区党群服务中心；审核双语脚本、课程与成片；成果交接" },
               { group: "文案脚本组", members: "钟芮桐、王棋莹", desc: "实地走访四大点位搜集素材，撰写并校对英语介绍脚本，负责剪辑、配乐与英文字幕" },
               { group: "德语字幕", members: "吴欣怡", desc: "德语译制与字幕制作，对接「E Flourishing」公众号完成 APEC 主题联合推文" },
-              { group: "教学组 · 成人班", members: "郑子非、林沃杰", desc: "约 5 节，制作日常对话 / 商务英语 / 旅游英语三类课件并设计场景演练" },
-              { group: "教学组 · 少儿班", members: "覃月坤、贺海明", desc: "约 5 节，设计趣味课堂，含英文故事、歌曲学唱与互动游戏" },
+              { group: "教学组 · 少儿班", members: "覃月坤、贺海明、郑子非、林沃杰", desc: "约 6 节，设计趣味课堂（英文故事、歌曲学唱、互动游戏），并制作日常对话 / 旅游英语等实用课件与场景演练" },
               { group: "德语体验课", members: "吴欣怡", desc: "面向社区青少年的德语启蒙体验课" },
               { group: "后勤综合组", members: "陈鑫海、吴欣怡", desc: "物资与经费台账、影像归档命名、每日实践台账与考勤、临时补位支援" }
             ],
@@ -506,7 +506,7 @@ window.SITE_DATA = {
               "5 分钟德语宣传片《华南新声，客音无界》，以赛事级标准打磨德语译制精度，参评第一届「外教社杯」",
               "APEC 主题少儿双语公益课堂 + 成人英语班 + 德语体验课，全套标准化教学资料移交社区，可支撑后续常态化开课",
               "调研报告《APEC 视域下江岭社区客家文化双语传播现状及提升策略研究》",
-              "推文 2 篇（成果总结 + 与「E Flourishing」联合发布的 APEC 主题稿）"
+              "推文 1 篇《百千万工程·江岭实践：深技大外国语学院学生用双语镜头唤醒客家围屋》，发布于学院公众号"
             ],
             data: [
               { k: "65%", v: "外籍游客无法获取外文游览信息" },
@@ -516,8 +516,7 @@ window.SITE_DATA = {
             ],
             media: [
               "实践成果新闻稿《双语传客韵 青春助振兴》—— 文字：吴欣怡；图片：吴欣怡、贺海明、钟芮桐",
-              "《百千万工程·江岭实践：深技大外国语学院学生用双语镜头唤醒客家围屋》",
-              "与「E Flourishing」公众号合作的 APEC 主题联合推文"
+              "《百千万工程·江岭实践：深技大外国语学院学生用双语镜头唤醒客家围屋》—— 推文 1 篇，发布于深圳技术大学外国语学院公众号"
             ],
             awards: [
               "马峦街道办事处出具《实践证明》（加盖公章）：确认 2026.07.04—07.09 在江岭社区开展「百千万工程」暑期三下乡实践，连续两年定点服务、成果移交社区",
@@ -533,12 +532,14 @@ window.SITE_DATA = {
               { src: "assets/sources/practice/rongmeng/社区图书室走访留影.jpg", alt: "社区图书室走访：与居民比赞合影" },
               { src: "assets/sources/practice/rongmeng/江岭社区友邻驿站合影.jpg", alt: "江岭社区东关珺府友邻驿站合影" }
             ],
+            // 视频托管后填 embed（B 站示例：//player.bilibili.com/player.html?bvid=BV1xx411c7mD&page=1&high_quality=1&danmaku=0），即可站内直接播放
             resources: [
               { label: "《江岭客家，有戏》最终版", kind: "video", path: "", note: "3 分 20 秒 · 中英德三语字幕" },
               { label: "实践总结片 · 最终版本", kind: "video", path: "", note: "7 天实践全程总结" },
               { label: "赤坳河绿道 · 廉政绿道 · 江岭社区公园", kind: "video", path: "", note: "生态点位介绍" },
               { label: "曾生故居 · 曾氏祠堂 · 东江纵队纪念馆", kind: "video", path: "", note: "红色文化点位介绍" },
               { label: "其余文旅点位介绍视频（5 处）", kind: "video", path: "", note: "围屋与古村等点位，共 8 处文旅点位成片" },
+              { label: "学院公众号推文 · 在线阅读", kind: "html", path: "assets/sources/practice/rongmeng/江岭实践推文.html", note: "《百千万工程·江岭实践：深技大外国语学院学生用双语镜头唤醒客家围屋》—— 撰稿：吴欣怡，发布于深圳技术大学外国语学院公众号" },
               { label: "APEC 实践报告", kind: "doc", path: "assets/sources/practice/rongmeng/APEC江岭社区客家文化双语传播三下乡实践报告(1).docx", note: "实践总报告" },
               { label: "江岭调研报告（final）", kind: "doc", path: "assets/sources/practice/rongmeng/江岭调研报告_final(1).docx", note: "调研报告终稿" },
               { label: "三下乡具体分工", kind: "doc", path: "assets/sources/practice/rongmeng/三下乡具体分工.docx", note: "分组分工与 7 天排期" },

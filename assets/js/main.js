@@ -649,7 +649,7 @@
         }
 
         if ((t.resources || []).length) {
-          section("素材与视频（本地路径）", () => renderResources(t.resources));
+          section("素材、文档与成片", () => renderResources(t.resources));
         }
 
         card.appendChild(body);
