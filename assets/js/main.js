@@ -778,13 +778,22 @@
         const list = el("div", "res-list");
         list.style.marginTop = "18px";
         b.items.forEach((it) => {
+          // 未随站发布的稿件（含第三方信息 / 内部数据）：保留条目留档，但不给一个必然打不开的链接
+          if (!it.path) {
+            const span = el("span", "doc-item is-pending");
+            span.appendChild(el("span", null, it.name));
+            span.appendChild(el("span", "doc-hint", it.note || "原件未随站发布"));
+            span.title = "该稿件涉及第三方信息，未随站发布；需要时可邮件索取";
+            list.appendChild(span);
+            return;
+          }
           const a = el("a", "doc-item");
           a.href = fileUrl(it.path);
           a.target = "_blank";
           a.rel = "noopener noreferrer";
           a.title = it.path;
           a.appendChild(el("span", null, it.name));
-          a.appendChild(el("span", "doc-hint", "打开本地文件 ↗"));
+          a.appendChild(el("span", "doc-hint", it.note || "打开本地文件 ↗"));
           list.appendChild(a);
         });
         block.appendChild(list);

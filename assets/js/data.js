@@ -657,7 +657,7 @@ window.SITE_DATA = {
           { src: "assets/images/shots/news-04.png", alt: "光影魔法课第三期新闻稿（文稿预览；原文件体积过大未随站发布）" },
           { src: "assets/images/shots/news-05.png", alt: "军训送清凉新闻稿（文稿预览）", link: "assets/sources/media-work/军训送清凉.docx" },
           { src: "assets/images/shots/news-06.png", alt: "创新就业讲座新闻稿（文稿预览）", link: "assets/sources/media-work/创新就业讲座新闻稿.docx" },
-          { src: "assets/images/shots/news-07.png", alt: "年终总结文案（文稿预览）", link: "assets/sources/media-work/年终总结文案最终版.docx" }
+          { src: "assets/images/shots/news-07.png", alt: "年终总结文案（文稿预览；原件含学院内部数据，不提供下载）" }
         ]
       },
       {
@@ -703,18 +703,18 @@ window.SITE_DATA = {
       },
       {
         title: "策划案",
-        desc: "面向学院大型活动与晚会的策划与统筹方案：从主题立意、流程设计到人员分工，形成可落地的执行文档。",
+        desc: "面向学院大型活动与晚会的策划与统筹方案：从主题立意、流程设计到人员分工，形成可落地的执行文档。两份原件涉及全院人员名单与内部流程，此处仅留档索引，需要时可邮件索取。",
         items: [
-          { name: "外国语学院就业育人表彰大会暨 AI 智能体创作大赛活动方案", path: "assets/sources/media-work/外国语学院就业育人表彰大会暨AI智能体创作大赛活动方案.docx" },
-          { name: "2026 SFL 毕业晚会总表（节目 / 人员统筹）", path: "assets/sources/media-work/2026SFL毕业晚会总表.xlsx" }
+          { name: "外国语学院就业育人表彰大会暨 AI 智能体创作大赛活动方案", path: "", note: "原件含内部流程与分工，未随站发布" },
+          { name: "2026 SFL 毕业晚会总表（节目 / 人员统筹）", path: "", note: "原件含演职人员名单，未随站发布" }
         ]
       },
       {
         title: "团学工作与总结",
-        desc: "学院团学工作的统筹文档与年度总结，沉淀组织实践经验与方法。下方为文稿预览，点击可打开原文。",
+        desc: "学院团学工作的统筹文档与年度总结，沉淀组织实践经验与方法。下方为文稿预览；涉及学院内部数据的两份不提供下载，需要时可邮件索取。",
         gallery: [
-          { src: "assets/images/shots/tx-01.png", alt: "外国语学院团工作总结（文稿预览）", link: "assets/sources/media-work/外国语学院团工作总结(2).docx" },
-          { src: "assets/images/shots/tx-02.png", alt: "深圳技术大学外国语学院团学工作（修改版）（文稿预览）", link: "assets/sources/media-work/深圳技术大学外国语学院团学工作修改版.docx" },
+          { src: "assets/images/shots/tx-01.png", alt: "外国语学院团工作总结（文稿预览；原件不提供下载）" },
+          { src: "assets/images/shots/tx-02.png", alt: "深圳技术大学外国语学院团学工作（修改版）（文稿预览；原件不提供下载）" },
           { src: "assets/images/shots/tx-03.png", alt: "年终总结（春冬）（文稿预览）", link: "assets/sources/media-work/年终总结春冬(1).docx" }
         ]
       }
