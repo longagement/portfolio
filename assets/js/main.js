@@ -1,7 +1,7 @@
 /* =========================================================
    站点交互脚本
    1 渲染内容    2 导航与锚点   3 作品筛选
-   4 作品详情弹窗 5 滚动动效     6 留言表单
+   4 滚动动效    5 留言表单
    所有文案数据来自 assets/js/data.js
    ========================================================= */
 (function () {
@@ -22,13 +22,23 @@
   const IS_LOCAL_FILE = window.location.protocol === "file:";
 
   /* ---------- 1. 渲染内容 ---------- */
+  // 把「文本…<em>高亮</em>…」解析成安全的 DOM 节点（替代 innerHTML，杜绝注入面）
+  function buildTagline(html) {
+    const frag = document.createDocumentFragment();
+    String(html || "").split(/<\/?em>/i).forEach((part, i) => {
+      if (!part) return;
+      frag.appendChild(i % 2 === 1 ? el("em", null, part) : document.createTextNode(part));
+    });
+    return frag;
+  }
+
   function renderProfile() {
     const p = DATA.profile;
     $("#brand-name").textContent = p.name;
     $("#hero-name").textContent = p.name;
     const major = $("#hero-major");
     if (major) { major.textContent = p.major || ""; major.hidden = !p.major; }
-    $("#hero-tagline").innerHTML = p.tagline; // 允许 <em> 高亮
+    $("#hero-tagline").replaceChildren(buildTagline(p.tagline)); // 仅允许 <em> 高亮，其余按纯文本处理
     const de = $("#hero-de");
     if (de) { de.textContent = p.de || ""; de.hidden = !p.de; }
     $("#hero-intro").textContent = p.intro;
@@ -55,7 +65,7 @@
     (p.actions || []).forEach((a) => {
       const btn = el("a", "btn btn-" + (a.style === "ghost" ? "ghost" : "primary"), a.text);
       btn.href = a.href;
-      if (a.href && a.href.indexOf("http") === 0) { btn.target = "_blank"; btn.rel = "noopener"; }
+      if (a.href && a.href.indexOf("http") === 0) { btn.target = "_blank"; btn.rel = "noopener noreferrer"; }
       actions.appendChild(btn);
     });
 
