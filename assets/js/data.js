@@ -723,7 +723,7 @@ window.SITE_DATA = {
 
   /* ---------- 联系方式 ---------- */
   contact: {
-    email: "19147792725@139.com",
+    email: "939981335@qq.com",
     desc: "无论是跨境 / 出海方向的实习机会、内容合作，还是想聊聊跨文化传播，都欢迎给我留言，我通常会在 1–2 个工作日内回复。完整中德双语演讲稿与证明材料包可按需提供。",
     formNote: "未配置后端时，点击发送会调用你的邮件客户端；在 data.js 中设置 formEndpoint 即可改为接口提交。",
     /* 填了接口地址就走 fetch 提交（例如 Formspree：https://formspree.io/f/xxxxxxx） */
@@ -731,7 +731,7 @@ window.SITE_DATA = {
   },
 
   socials: [
-    { label: "邮箱", handle: "19147792725@139.com", url: "mailto:19147792725@139.com" },
+    { label: "邮箱", handle: "939981335@qq.com", url: "mailto:939981335@qq.com" },
     { label: "微信 / 电话", handle: "邮件联系后提供", url: "" },
     { label: "所在城市", handle: "深圳 · 龙华区", url: "" },
     { label: "求职方向", handle: "跨境 / 出海内容 · 本地化 · 跨境电商", url: "" }
