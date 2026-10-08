@@ -126,7 +126,7 @@ window.SITE_DATA = {
     },
     {
       id: "german-video",
-      title: "德语视频 · 吴欣怡 制作的《华南新声，客音无界》参加外教社杯短视频比赛",
+      title: "《华南新声，客音无界》· 外教社杯参赛德语短片",
       summary: "作品《语守本土，译向世界》：用德语讲述普通话与岭南方言（粤语 & 客家话）的共生保护，并构想客家话语料库。",
       category: "德语内容",
       year: "2026",
@@ -202,6 +202,9 @@ window.SITE_DATA = {
       external: { label: "查看项目详情", url: "" },
       caseHref: "#practice",
       caseLabel: "查看完整案例",
+      // 现场图集统一维护在「实践经历 → 三下乡」各队详情里。
+      // 注意：works 的 detail.gallery 没有渲染出口（只有 practice.extra / competitions.workId
+      // 会消费它），此处不要再放图集，否则又是一条看不见的死数据。
       detail: {
         overview: [
           "独立撰写项目申报方案，成功获批校级重点项目及 1000 元专项经费，统筹 20 人实践团队连续两届落地。",
@@ -211,11 +214,6 @@ window.SITE_DATA = {
           "20 人团队排期与分工，两届连续落地（7 天 × 2 届）",
           "8 处文旅点位介绍视频 + 2 部宣传片 + 完整复盘报告",
           "获社区官方表扬信 2 封"
-        ],
-        gallery: [
-          { src: "assets/images/works/countryside.jpg", alt: "社区图书室走访：与居民比赞合影" },
-          { src: "assets/images/works/countryside-2.jpg", orient: "portrait", alt: "江岭社区党建书吧调研走访现场" },
-          { src: "assets/images/works/countryside-3.jpg", alt: "双语特色环保话剧排练过程留影" }
         ]
       }
     },
@@ -233,6 +231,8 @@ window.SITE_DATA = {
       external: { label: "查看作品详情", url: "" },
       caseHref: "#media",
       caseLabel: "查看完整案例",
+      // 相关图集见「新媒体工作成果 → 视觉物料与封面」板块（media-2.jpg 在那里有出口）。
+      // 注意：works 的 detail.gallery 没有渲染出口，此处不要再放图集，否则又是一条看不见的死数据。
       detail: {
         overview: [
           "承担学院新媒体平台的持续内容供给：从活动通知、新闻稿到海报设计与推文排版，形成稳定的产出节奏。",
@@ -242,9 +242,6 @@ window.SITE_DATA = {
           "累计撰写活动通知与新闻稿 50+ 篇",
           "设计海报 10+ 张、完成推文排版 10+ 篇",
           "输出活动策划方案 5 份"
-        ],
-        gallery: [
-          { src: "assets/images/works/media-2.jpg", alt: "活动海报设计选样：双选会、光影魔法课摄影讲座、日语成长旋律专题" }
         ]
       }
     },
@@ -530,6 +527,7 @@ window.SITE_DATA = {
               { src: "assets/sources/practice/rongmeng/双语课程合影.jpg", fallback: "assets/images/works/edu.svg", alt: "社区双语公益课堂合影" },
               { src: "assets/sources/practice/rongmeng/曾生故居·曾氏祠堂·东江纵队纪念馆-封面.jpg", alt: "曾生故居 · 曾氏祠堂 · 东江纵队纪念馆介绍视频封面（红色文化点位）" },
               { src: "assets/sources/practice/rongmeng/社区图书室走访留影.jpg", alt: "社区图书室走访：与居民比赞合影" },
+              { src: "assets/sources/practice/rongmeng/江岭社区党建书吧访谈调研.jpg", orient: "portrait", fallback: "assets/images/works/countryside.svg", alt: "在江岭社区党建书吧与居民开展一对一访谈调研" },
               { src: "assets/sources/practice/rongmeng/江岭社区友邻驿站合影.jpg", alt: "江岭社区东关珺府友邻驿站合影" }
             ],
             // 视频托管后填 embed（B 站示例：//player.bilibili.com/player.html?bvid=BV1xx411c7mD&page=1&high_quality=1&danmaku=0），即可站内直接播放
@@ -607,9 +605,6 @@ window.SITE_DATA = {
               { src: "assets/sources/practice/lingnan/岭南融梦队在长守戏剧谷前合影.jpg", fallback: "assets/images/works/countryside.svg", alt: "岭南融梦队在长守戏剧谷招商服务办公室前合影，两侧为「百千万工程突击队」队旗" },
               { src: "assets/sources/practice/lingnan/实践队员在社区党群服务中心了解村史.jpg", fallback: "assets/images/works/countryside.svg", alt: "在社区党群服务中心宣传栏前了解长守村村史与活化历程" },
               { src: "assets/sources/practice/lingnan/实践队员走访长守村道.jpg", fallback: "assets/images/works/countryside-2.svg", alt: "走访长守村村道，实地观察文旅资源分布" },
-              { src: "assets/sources/practice/lingnan/实践队员在社区图书室开展访谈调研.jpg", fallback: "assets/images/works/countryside-2.svg", alt: "在社区图书室与社区工作者开展访谈调研" },
-              { src: "assets/sources/practice/lingnan/实践队员环保双语课程.jpg", fallback: "assets/images/works/edu.svg", alt: "双语环保课堂现场" },
-              { src: "assets/sources/practice/lingnan/实践队员排练双语特色环保话剧过程留影.jpg", fallback: "assets/images/works/countryside.svg", alt: "双语环保话剧排练现场" },
               { src: "assets/sources/practice/lingnan/双语话剧《森林小卫士》演出现场.jpg", fallback: "assets/images/works/edu.svg", alt: "双语话剧《森林小卫士》演出现场，孩子们手持树叶道具与垃圾分类造型合影" },
               { src: "assets/sources/practice/lingnan/实践队员与当地志愿者共同清理河道.jpg", fallback: "assets/images/works/countryside-2.svg", alt: "与当地志愿者共同清理河道" },
               { src: "assets/sources/practice/lingnan/实践队员在客家老屋前合影.jpg", fallback: "assets/images/works/countryside.svg", alt: "实践队员在客家老屋前合影" }
@@ -657,7 +652,7 @@ window.SITE_DATA = {
           { src: "assets/images/shots/news-04.png", alt: "光影魔法课第三期新闻稿（文稿预览；原文件体积过大未随站发布）" },
           { src: "assets/images/shots/news-05.png", alt: "军训送清凉新闻稿（文稿预览）", link: "assets/sources/media-work/军训送清凉.docx" },
           { src: "assets/images/shots/news-06.png", alt: "创新就业讲座新闻稿（文稿预览）", link: "assets/sources/media-work/创新就业讲座新闻稿.docx" },
-          { src: "assets/images/shots/news-07.png", alt: "年终总结文案（文稿预览；原件含学院内部数据，不提供下载）" }
+          { src: "assets/images/shots/news-07.png", alt: "年终总结文案（文稿预览）" }
         ]
       },
       {
