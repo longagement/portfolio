@@ -97,7 +97,7 @@ window.SITE_DATA = {
       role: "队长 / 内容主创",
       cover: "assets/images/works/german-star.jpg",
       coverFallback: "assets/images/works/german-star.svg",
-      coverAlt: "德语之星演讲稿定稿《承载歌声的翅膀，共建友谊的桥梁》文档页",
+      coverAlt: "德语之星演讲稿定稿《乘着歌声的翅膀，共建友谊的桥梁》文档页",
       tech: ["德语演讲", "中德双语稿件", "论证结构设计", "14 页 PPT 统筹"],
       external: { label: "查看作品详情", url: "" },
       caseHref: "#practice",
@@ -174,13 +174,16 @@ window.SITE_DATA = {
       caseLabel: "查看完整案例",
       detail: {
         overview: [
-          "负责测试样品拆板核验、影像存档与检测报告分类归档，保障合规信息在多个系统间完全一致。",
-          "独立操作亚马逊 ACC 合规平台及内部 TCF 卷宗系统，完成报告上传与关键信息校验；运用 Excel 建立业务台账与进度报表，梳理高频易错点并搭建个人操作 SOP，显著提升资料处理准确率。"
+          "样品前处理：负责轻工产品测试样品的拆板核验与影像存档，逐批核对实物与委托信息的一致性，为后续报告出具保留可追溯的影像记录。",
+          "报告管理：按标准类型与委托方对检测报告分类归档，维护委托单、检测系统与交付件三方信息一致，降低因版本或信息错位导致的返工风险。",
+          "平台操作：独立操作亚马逊 ACC 合规平台与内部 TCF 卷宗系统，对照 CE / CPC / CPSIA 标准核对报告关键页，完成跨境合规资料的上传、校验与状态跟踪。",
+          "流程沉淀：以 Excel 建立批次台账与进度报表，梳理高频易错点并固化个人操作 SOP，让重复性合规操作有章可循、可自查、可交接。"
         ],
         highlights: [
-          "累计处理百余批次样品，交付超 450 份跨境准入资料",
-          "沉淀个人操作 SOP，把重复性合规工作标准化",
-          "熟悉 CE / CPC / CPSIA 等多类跨境合规报告标准"
+          "累计处理百余批次样品，交付超 450 份跨境准入资料，覆盖欧盟（CE）与美国（CPC / CPSIA）两大市场",
+          "独立完成 ACC 平台全流程操作：报告核对、关键信息校验、上传与状态跟踪",
+          "沉淀个人操作 SOP 与批次台账，把重复性合规工作标准化",
+          "对「跨境」的理解从语言翻译下沉到规则翻译：同一件产品，进入欧盟与美国要过的是两套不同的门槛"
         ],
         gallery: [
           { src: "assets/images/works/sgs.jpg", orient: "portrait", fallback: "assets/images/works/sgs.svg", alt: "SGS 实习留影：标识墙前，佩戴实习工牌" },
@@ -408,8 +411,6 @@ window.SITE_DATA = {
       deliverables: ["14 页中德双语 PPT", "德文定稿演讲稿", "3–5 分钟德语演讲视频（配德语字幕）", "初赛资料包（视频 + 讲稿 + PPT，2026.10.09 提交）", "15 个答辩问题预案", "22 个板块的中德文化交流素材库"],
       sources: ["中华人民共和国外交部", "同济大学", "Pew Research Center", "新华网"],
       resources: [
-        { label: "参赛 PPT（10.09 提交组委会版）", kind: "doc", path: "assets/sources/competitions/德语之星参赛PPT（最终提交版）.pdf", note: "14 页演示文稿 · 按组委会要求导出为 PDF，浏览器内可直接翻看" },
-        { label: "德文演讲稿（提交定稿）", kind: "doc", path: "assets/sources/competitions/德语之星演讲稿（德文定稿）.docx", note: "以德国伯乐中文合唱团故事切入的完整讲稿，为提交组委会的 Word 原版" },
         { label: "德语之星 · 飞书导出 PDF", kind: "doc", path: "assets/sources/competitions/德语之星.pdf", note: "备赛过程文档：最终安排、PPT 结构与 15 个答辩问题预案" },
         { label: "中德文化交流素材库 · 完整整合版", kind: "html", path: "assets/sources/competitions/中德文化交流素材库_完整整合版.html", note: "团队共建备赛资料：22 个主题板块、中德对照的事例与论据（教育、友好城市、体育、企业产业、影视媒体、汉学与翻译等），附论据可视化年报与数据卡片" }
       ],
@@ -530,7 +531,6 @@ window.SITE_DATA = {
               { label: "曾生故居 · 曾氏祠堂 · 东江纵队纪念馆", kind: "video", path: "", note: "红色文化点位介绍" },
               { label: "其余文旅点位介绍视频（5 处）", kind: "video", path: "", note: "围屋与古村等点位，共 8 处文旅点位成片" },
               { label: "学院公众号推文 · 在线阅读", kind: "html", path: "assets/sources/practice/rongmeng/江岭实践推文.html", note: "《百千万工程·江岭实践：深技大外国语学院学生用双语镜头唤醒客家围屋》—— 撰稿：吴欣怡，发布于深圳技术大学外国语学院公众号" },
-              { label: "APEC 实践报告", kind: "doc", path: "assets/sources/practice/rongmeng/APEC江岭社区客家文化双语传播三下乡实践报告(1).docx", note: "实践总报告" },
               { label: "江岭调研报告（final）", kind: "doc", path: "assets/sources/practice/rongmeng/江岭调研报告_final(1).docx", note: "调研报告终稿" },
               { label: "三下乡具体分工", kind: "doc", path: "assets/sources/practice/rongmeng/三下乡具体分工.docx", note: "分组分工与 7 天排期" },
               { label: "服务评价表", kind: "doc", path: "assets/sources/practice/rongmeng/附件7：广东青年大学生“百千万工程”突击队行动服务评价表 (1).docx", note: "总体评价：优秀" },
