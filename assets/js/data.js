@@ -91,7 +91,7 @@ window.SITE_DATA = {
     {
       id: "german-star",
       title: "德语之星 · 全国德语演讲比赛",
-      summary: "2026.10.09 率队向组委会交付初赛资料包。演讲题目《乘着歌声的翅膀，共建友谊的桥梁》：以《原来中国长这样》为叙事素材，提出「Erst begegnen, dann verstehen（先相遇，再理解）」的反转命题，担任队长。",
+      summary: "经校内选拔出线，代表深圳技术大学参加全国初赛；2026.10.09 率队向组委会交付初赛资料包。演讲题目《乘着歌声的翅膀，共建友谊的桥梁》：以《原来中国长这样》为叙事素材，提出「Erst begegnen, dann verstehen（先相遇，再理解）」的反转命题，担任队长。",
       category: "德语内容",
       year: "2026",
       role: "队长 / 内容主创",
@@ -104,12 +104,12 @@ window.SITE_DATA = {
       caseLabel: "查看完整案例",
       detail: {
         overview: [
-          "作品原题《Auf Flügeln des Gesanges – gemeinsam Brücken der Freundschaft bauen》（承载歌声的翅膀，共建友谊的桥梁）。以 2025 年度「中国好书」《原来中国长这样》为叙事主线——该书由德国伯乐中文合唱团十位成员以留学生视角写成。",
+          "经校内选拔出线，代表深圳技术大学参加全国初赛。作品原题《Auf Flügeln des Gesanges – gemeinsam Brücken der Freundschaft bauen》（乘着歌声的翅膀，共建友谊的桥梁）。以 2025 年度「中国好书」《原来中国长这样》为叙事主线——该书由德国伯乐中文合唱团十位成员以留学生视角写成。",
           "全篇核心思辨：推翻「Erst verstehen, dann begegnen（先理解，再相遇）」这一默认假设，反过来主张「Erst begegnen, dann verstehen（先相遇，再理解）」。论证分三层递进：歌声层（德国城堡下响起吉他，唱的却是成都的故事）→ 行走层（柏林夫妇 Egon Schuler 与 Erika 不会一句中文却行走中国数十万公里；《红楼梦》德语译者 Martin Woesler）→ 自我层（从「听故事的人」变成「写故事的人」）。"
         ],
         quote: {
-          de: "„Verständnis ist kein Visum für die Begegnung. Es ist das Gepäck, das wir unterwegs mitnehmen.“",
-          cn: "理解不是相遇的签证，而是我们在路上携带的行囊。"
+          de: "„Verständnis ist kein Visum für die Begegnung. Es ist das Gepäck, das wir unterwegs mitbringen. Lasst uns gemeinsam singen und Brücken der Freundschaft bauen!“",
+          cn: "理解不是相遇的签证，而是我们随身携带、伴路上路的行囊。让我们一起歌唱，共建友谊的桥梁！"
         },
         highlights: [
           "2026.10.09 率队按期交付初赛资料包（德文讲稿 + 14 页参赛 PPT + 演讲视频），三项材料同步提交组委会",
@@ -119,7 +119,7 @@ window.SITE_DATA = {
           "11.01 赴同济大学参加决赛答辩（结果待出）"
         ],
         gallery: [
-          { src: "assets/images/works/german-star.jpg", fallback: "assets/images/works/german-star.svg", alt: "演讲稿定稿《承载歌声的翅膀，共建友谊的桥梁》" },
+          { src: "assets/images/works/german-star.jpg", fallback: "assets/images/works/german-star.svg", alt: "演讲稿定稿《乘着歌声的翅膀，共建友谊的桥梁》" },
           { src: "assets/images/works/german-star-2.jpg", orient: "portrait", fallback: "assets/images/works/german-star-2.svg", alt: "答辩准备清单：主题动机与问题的中德双语预案" }
         ]
       }
@@ -355,7 +355,7 @@ window.SITE_DATA = {
     {
       time: "2026.10 — 至今",
       title: "德语之星 · 全国德语演讲比赛 队长",
-      org: "第五届 · 国家级赛事 · 初赛评审中（11.01 同济大学决赛答辩）",
+      org: "第五届 · 国家级赛事 · 校内选拔出线，代表学校参赛 · 初赛评审中（11.01 同济大学决赛答辩）",
       desc: "演讲题目《乘着歌声的翅膀，共建友谊的桥梁》：以《原来中国长这样》为叙事素材，主导「先相遇，再理解」反转命题与三层递进论证，统筹 14 页 PPT 与德文讲稿；2026.10.09 率队向组委会交付初赛资料包（演讲视频 + 讲稿 + PPT），11.01 赴同济大学决赛答辩。"
     },
     {
@@ -395,18 +395,20 @@ window.SITE_DATA = {
       status: "初赛评审中",
       thesis: "Erst begegnen, dann verstehen（先相遇，再理解）",
       quote: {
-        de: "„Verständnis ist kein Visum für die Begegnung. Es ist das Gepäck, das wir unterwegs mitnehmen.“",
-        cn: "理解不是相遇的签证，而是我们在路上携带的行囊。"
+        de: "„Verständnis ist kein Visum für die Begegnung. Es ist das Gepäck, das wir unterwegs mitbringen. Lasst uns gemeinsam singen und Brücken der Freundschaft bauen!“",
+        cn: "理解不是相遇的签证，而是我们随身携带、伴路上路的行囊。让我们一起歌唱，共建友谊的桥梁！"
       },
       summary: "以 2025 年度「中国好书」《原来中国长这样》为叙事主线，推翻「先理解，再相遇」的默认假设，反向提出「先相遇，再理解」，用三层递进论证把跨文化交流从「知识问题」还原成「行动问题」。",
       structure: [
+        { k: "参赛资格", v: "经校内选拔出线，作为深圳技术大学代表队参加全国初赛（4 名队员 + 1 名带队老师）" },
         { k: "演讲题目", v: "《乘着歌声的翅膀，共建友谊的桥梁》· Auf Flügeln des Gesanges – gemeinsam Brücken der Freundschaft bauen（中德双语，已提交组委会）" },
         { k: "叙事主线", v: "《原来中国长这样》：由德国伯乐中文合唱团成员以留学生视角写成的中国观察" },
         { k: "核心命题", v: "Erst verstehen, dann begegnen → Erst begegnen, dann verstehen（反转命题）" },
-        { k: "三层论证", v: "歌声层（德国城堡下响起吉他，唱的却是成都）→ 行走层（不懂中文却行走中国数十万公里的德国夫妇；《红楼梦》德语译者）→ 自我层（从听故事的人变成写故事的人）" },
+        { k: "三层论证", v: "歌声层（德国城堡下响起吉他，唱的却是成都）→ 行走层（不懂中文却行走中国数十万公里的德国夫妇；《红楼梦》德语译者）→ 自我层（从听故事的人变成写故事的人：已落地学院国际周，展示中国传统文化、用德语演出戏剧，各国学生同堂互学）" },
+        { k: "距离辩证", v: "最远的距离不是八千公里，而是「我必须先理解你，才能决定是否靠近你」；最近的距离是「我们一起唱一首歌，然后发现早已在旋律中相连」" },
         { k: "现实案例", v: "武汉柴油机厂格里希、《黑神话：悟空》" },
         { k: "价值升维", v: "背负文化 → 融通文化" },
-        { k: "金句", v: "Verständnis ist kein Visum für die Begegnung.（理解不是相遇的签证）" }
+        { k: "金句", v: "Verständnis ist kein Visum für die Begegnung. Es ist das Gepäck, das wir unterwegs mitbringen. Lasst uns gemeinsam singen und Brücken der Freundschaft bauen!（理解不是相遇的签证，而是随身携带的行囊——让我们一起歌唱，共建友谊的桥梁）" }
       ],
       deliverables: ["14 页中德双语 PPT", "德文定稿演讲稿", "3–5 分钟德语演讲视频（配德语字幕）", "初赛资料包（视频 + 讲稿 + PPT，2026.10.09 提交）", "15 个答辩问题预案", "22 个板块的中德文化交流素材库"],
       sources: ["中华人民共和国外交部", "同济大学", "Pew Research Center", "新华网"],
