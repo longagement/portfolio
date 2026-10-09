@@ -420,7 +420,6 @@ window.SITE_DATA = {
       resources: [
         { label: "参赛 PPT（10.09 提交组委会版）", kind: "doc", path: "assets/sources/competitions/德语之星参赛PPT（最终提交版）.pdf", note: "14 页演示文稿 · 按组委会要求导出为 PDF，浏览器内可直接翻看" },
         { label: "德文演讲稿（提交定稿）", kind: "doc", path: "assets/sources/competitions/德语之星演讲稿（德文定稿）.docx", note: "以德国伯乐中文合唱团故事切入的完整讲稿，为提交组委会的 Word 原版" },
-        { label: "组委会报名表（脱敏）", kind: "doc", path: "assets/sources/competitions/德语之星报名表（脱敏）.docx", note: "深圳技术大学代表队正式报名凭证：4 名队员与带队老师构成、中德双语演讲题目、赛事要求；手机号与微信号已遮蔽" },
         { label: "德语之星 · 飞书导出 PDF", kind: "doc", path: "assets/sources/competitions/德语之星.pdf", note: "备赛过程文档：最终安排、PPT 结构与 15 个答辩问题预案" },
         { label: "中德文化交流素材库 · 完整整合版", kind: "html", path: "assets/sources/competitions/中德文化交流素材库_完整整合版.html", note: "团队共建备赛资料：22 个主题板块、中德对照的事例与论据（教育、友好城市、体育、企业产业、影视媒体、汉学与翻译等），附论据可视化年报与数据卡片" }
       ],
