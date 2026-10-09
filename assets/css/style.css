@@ -19,10 +19,20 @@
   --muted: #a5a8b5;
   --hairline: #e0e2e8;
   --hairline-soft: #eef0f3;
-  --accent: #4262ff;
-  --accent-press: #2a41b6;
-  --accent-soft: #eef1ff;
-  --highlight: #ffd02f;
+
+  /* 主色：普鲁士蓝（Preußischblau）——不是通用科技蓝。
+     出处：这套内容的主线是中德跨文化，普鲁士蓝是德国最经典的文化色，
+     同时比原来的 #4262ff 更沉稳，白底对比度 4.7:1 → 8.0:1，可读性更高。 */
+  --accent: #2b4f8f;
+  --accent-press: #1d3766;
+  --accent-soft: #e9eff7;
+
+  /* 点缀色一：琥珀金 —— 呼应普鲁士蓝的经典搭配，用作高亮下划线 */
+  --highlight: #ecb84b;
+
+  /* 点缀色二：印章朱红 —— 只用于极小面积（编号短横、标题装饰线），
+     与素材库的深蓝+朱红体系同源。不用于正文，对比度 6.0:1。 */
+  --seal: #b4342c;
 
   /* 圆角与阴影 */
   --r-sm: 10px;
@@ -47,6 +57,12 @@
      否则浏览器会跳过这个不存在的字体名。 */
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
           "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+
+  /* 衬线栈：同样只用系统字体，零外部请求。
+     用于首屏姓名、品牌字与中德金句——中文落到宋体有书卷气，
+     德语落到 Georgia 是经典的正文衬线，正好呼应「语言 / 翻译 / 跨文化」这条主线。 */
+  --font-serif: Georgia, "Times New Roman", "Songti SC", "STSong",
+                "Source Han Serif SC", "Noto Serif SC", "SimSun", serif;
 }
 
 /* ---------- 2. 基础重置 ---------- */
@@ -114,7 +130,20 @@ button { font: inherit; color: inherit; }
   font-size: 13px; font-weight: 600; letter-spacing: .14em;
   text-transform: uppercase; color: var(--stone); margin-bottom: 12px;
 }
+/* 眉标前置一枚朱红短横，让「01 — 作品集」这类编号成为全站统一的节奏点 */
+.eyebrow::before {
+  content: ""; display: inline-block; vertical-align: middle;
+  width: 18px; height: 2px; margin-right: 10px;
+  border-radius: 2px; background: var(--seal);
+}
 .section-title { font-size: clamp(30px, 4vw, 44px); }
+/* 每个大标题下面压一条「朱红 → 普鲁士蓝」渐变短线 */
+.section-title::after {
+  content: ""; display: block;
+  width: 52px; height: 3px; margin-top: 14px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--seal), var(--accent));
+}
 .section-desc { margin-top: 16px; color: var(--slate); font-size: 17px; }
 .sub-title { font-size: 20px; margin-bottom: 20px; }
 
@@ -169,7 +198,9 @@ button { font: inherit; color: inherit; }
 .brand-mark {
   display: grid; place-items: center;
   width: 30px; height: 30px; border-radius: 9px;
-  background: var(--ink); color: #fff; font-size: 15px; font-weight: 700;
+  background: linear-gradient(135deg, var(--accent), var(--accent-press));
+  color: #fff; font-size: 15px; font-weight: 700;
+  font-family: var(--font-serif);
 }
 .brand-text { font-size: 16px; letter-spacing: -.01em; }
 
@@ -208,22 +239,42 @@ button { font: inherit; color: inherit; }
   scroll-margin-top: 84px;
   background:
     radial-gradient(1000px 480px at 88% -8%, var(--accent-soft), transparent 62%),
-    radial-gradient(760px 420px at 4% 12%, #fff8e0, transparent 66%);
+    radial-gradient(760px 420px at 4% 12%, #fdf5e6, transparent 66%);
+}
+/* 首屏底纹：极淡的对角线网格，只在 hero 出现，给纯白底一点手感。
+   透明度压到 3% 以下，正常视距几乎看不见，但能去掉「空」的感觉。 */
+.hero::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(43, 79, 143, .035) 0 1px,
+    transparent 1px 26px
+  );
+  mask-image: linear-gradient(180deg, rgba(0,0,0,.9), transparent 72%);
+  z-index: 0;
 }
 .hero-inner {
+  position: relative; z-index: 1;   /* 压在底纹之上 */
   display: grid; grid-template-columns: 1.15fr .85fr;
   gap: 64px; align-items: center;
 }
-.hero-title { font-size: clamp(44px, 7vw, 76px); letter-spacing: -.035em; }
+/* 首屏姓名用衬线：全站唯一的字体切换点，是最直接的记忆点。
+   字距改为轻微正值——衬线字带脚，负字距会让宋体笔画挤在一起。 */
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(44px, 7vw, 76px);
+  letter-spacing: .01em;
+}
 .hero-major {
   margin-top: 10px; font-size: clamp(26px, 3.4vw, 34px);
   font-weight: 600; letter-spacing: -.01em; line-height: 1.2;
   color: var(--ink);
 }
+/* 身份行前面的标记改成「普鲁士蓝 + 琥珀金」双色点，呼应整套配色 */
 .hero-major::before {
   content: ""; display: inline-block; vertical-align: middle;
   width: 10px; height: 10px; margin-right: 12px; border-radius: 50%;
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent) 0 55%, var(--highlight) 55% 100%);
 }
 .hero-tagline {
   margin-top: 14px; font-size: clamp(19px, 2.4vw, 24px);
@@ -493,7 +544,11 @@ img[src*="蓝信封志愿时数卡"] { object-position: 50% 12%; }
   background: var(--surface); border-left: 3px solid var(--accent);
   border-radius: 0 var(--r-md) var(--r-md) 0;
 }
-.comp-quote .quote-de { font-style: italic; color: var(--ink); font-size: 15.5px; line-height: 1.75; }
+/* 金句用衬线：德语衬线斜体是这个页面上最有「语言感」的一处 */
+.comp-quote .quote-de {
+  font-family: var(--font-serif);
+  font-style: italic; color: var(--ink); font-size: 16.5px; line-height: 1.75;
+}
 .comp-quote .quote-cn {
   margin-top: 10px; padding-top: 10px;
   border-top: 1px dashed var(--hairline);
@@ -665,10 +720,10 @@ img[src*="蓝信封志愿时数卡"] { object-position: 50% 12%; }
 
 /* 案例卡片高亮：从作品卡「查看完整案例」精准跳转到实践板块后，短暂闪烁目标卡片 */
 @keyframes case-highlight {
-  0%   { box-shadow: 0 0 0 0 rgba(66, 98, 255, 0); }
-  15%  { box-shadow: 0 0 0 3px var(--accent), 0 8px 28px rgba(66, 98, 255, .18); }
-  60%  { box-shadow: 0 0 0 3px var(--accent), 0 8px 28px rgba(66, 98, 255, .14); }
-  100% { box-shadow: 0 0 0 0 rgba(66, 98, 255, 0); }
+  0%   { box-shadow: 0 0 0 0 rgba(43, 79, 143, 0); }
+  15%  { box-shadow: 0 0 0 3px var(--accent), 0 8px 28px rgba(43, 79, 143, .18); }
+  60%  { box-shadow: 0 0 0 3px var(--accent), 0 8px 28px rgba(43, 79, 143, .14); }
+  100% { box-shadow: 0 0 0 0 rgba(43, 79, 143, 0); }
 }
 .is-case-highlight {
   animation: case-highlight 1.8s var(--ease);
