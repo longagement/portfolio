@@ -91,14 +91,14 @@ window.SITE_DATA = {
     {
       id: "german-star",
       title: "德语之星 · 全国德语演讲比赛",
-      summary: "正在角逐第五届德语之星（国家级赛事）。以《原来中国长这样》为叙事主线，提出「Erst begegnen, dann verstehen（先相遇，再理解）」的反转命题，担任队长。",
+      summary: "2026.10.09 率队向组委会交付初赛资料包。演讲题目《乘着歌声的翅膀，共建友谊的桥梁》：以《原来中国长这样》为叙事素材，提出「Erst begegnen, dann verstehen（先相遇，再理解）」的反转命题，担任队长。",
       category: "德语内容",
       year: "2026",
       role: "队长 / 内容主创",
       cover: "assets/images/works/german-star.jpg",
       coverFallback: "assets/images/works/german-star.svg",
       coverAlt: "德语之星演讲稿定稿《承载歌声的翅膀，共建友谊的桥梁》文档页",
-      tech: ["德语演讲", "中德双语稿件", "论证结构设计", "13 页 PPT 统筹"],
+      tech: ["德语演讲", "中德双语稿件", "论证结构设计", "14 页 PPT 统筹"],
       external: { label: "查看作品详情", url: "" },
       caseHref: "#practice",
       caseLabel: "查看完整案例",
@@ -114,7 +114,7 @@ window.SITE_DATA = {
         highlights: [
           "已完成 8 个里程碑节点：10.01 定稿 / 10.05 PPT / 10.07 & 10.08 两次拍摄迭代 / 10.09 视频输出 / 10.15 成果交付，跨 10 天推进",
           "主导选题与论证重构：以一本真实的书为叙事主线 + 一句反转命题为论证骨架",
-          "统筹 13 页 PPT 图文节奏与留白，安排 2 页纯视觉页承担情绪转换",
+          "统筹 14 页 PPT 图文节奏与留白，安排 2 页纯视觉页承担情绪转换",
           "团队分工预测并准备 15 个答辩问题，覆盖主题动机、论据选择、引用来源与现实行动",
           "11.01 赴同济大学参加决赛答辩（结果待出）"
         ],
@@ -335,7 +335,7 @@ window.SITE_DATA = {
       group: "办公与 AI 工具",
       items: [
         { name: "Excel（透视表 / 台账 / 报表）", level: 84, note: "合规业务进度台账" },
-        { name: "PPT / Word", level: 82, note: "13 页演讲 PPT 统筹" },
+        { name: "PPT / Word", level: 82, note: "14 页演讲 PPT 统筹" },
         { name: "ChatGPT / Gemini", level: 78, note: "本地化文案提效" }
       ]
     }
@@ -352,8 +352,8 @@ window.SITE_DATA = {
     {
       time: "2026.10 — 至今",
       title: "德语之星 · 全国德语演讲比赛 队长",
-      org: "第五届 · 国家级赛事 · 正在角逐（11.01 同济大学决赛答辩）",
-      desc: "以《原来中国长这样》为叙事主线，主导「先相遇，再理解」反转命题与递进式论证结构，统筹 13 页 PPT；已完成稿件、PPT 与两版拍摄，跨 10 天推进 8 个里程碑节点，11.01 赴同济大学决赛答辩。"
+      org: "第五届 · 国家级赛事 · 初赛评审中（11.01 同济大学决赛答辩）",
+      desc: "演讲题目《乘着歌声的翅膀，共建友谊的桥梁》：以《原来中国长这样》为叙事素材，主导「先相遇，再理解」反转命题与三层递进论证，统筹 14 页 PPT 与德文讲稿；2026.10.09 率队向组委会交付初赛资料包（演讲视频 + 讲稿 + PPT），11.01 赴同济大学决赛答辩。"
     },
     {
       time: "2026",
@@ -388,8 +388,8 @@ window.SITE_DATA = {
       name: "德语之星 · 全国德语演讲比赛",
       level: "第五届 · 国家级赛事",
       role: "队长 / 内容主创",
-      period: "2026.10.01 — 10.15 成片交付 · 11.01 同济大学决赛答辩",
-      status: "正在角逐",
+      period: "2026.10.09 初赛资料已交付组委会 · 11.01 同济大学决赛答辩",
+      status: "初赛评审中",
       thesis: "Erst begegnen, dann verstehen（先相遇，再理解）",
       quote: {
         de: "„Verständnis ist kein Visum für die Begegnung. Es ist das Gepäck, das wir unterwegs mitnehmen.“",
@@ -398,15 +398,16 @@ window.SITE_DATA = {
       summary: "以 2025 年度「中国好书」《原来中国长这样》为叙事主线，推翻「先理解，再相遇」的默认假设，反向提出「先相遇，再理解」，用三层递进论证把跨文化交流从「知识问题」还原成「行动问题」。",
       schedule: [
         { date: "10.01", item: "演讲稿定稿" },
-        { date: "10.05", item: "13 页 PPT 交付" },
+        { date: "10.05", item: "14 页 PPT 交付" },
         { date: "10.07", item: "第一次拍摄" },
         { date: "10.08", item: "第二次拍摄：在首版基础上补拍完善、交付稿件" },
-        { date: "10.09", item: "成片输出" },
+        { date: "10.09", item: "初赛资料提交组委会：演讲视频 + 德文演讲稿 + 参赛 PPT（匿名版）" },
         { date: "10.12", item: "答辩预演" },
         { date: "10.15", item: "成果交付" },
         { date: "11.01", item: "同济大学决赛答辩" }
       ],
       structure: [
+        { k: "演讲题目", v: "《乘着歌声的翅膀，共建友谊的桥梁》· Auf Flügeln des Gesanges – gemeinsam Brücken der Freundschaft bauen（中德双语，已提交组委会）" },
         { k: "叙事主线", v: "《原来中国长这样》：由德国伯乐中文合唱团成员以留学生视角写成的中国观察" },
         { k: "核心命题", v: "Erst verstehen, dann begegnen → Erst begegnen, dann verstehen（反转命题）" },
         { k: "三层论证", v: "歌声层（德国城堡下响起吉他，唱的却是成都）→ 行走层（不懂中文却行走中国数十万公里的德国夫妇；《红楼梦》德语译者）→ 自我层（从听故事的人变成写故事的人）" },
@@ -414,11 +415,13 @@ window.SITE_DATA = {
         { k: "价值升维", v: "背负文化 → 融通文化" },
         { k: "金句", v: "Verständnis ist kein Visum für die Begegnung.（理解不是相遇的签证）" }
       ],
-      deliverables: ["13 页中德双语 PPT", "定稿演讲稿", "两版拍摄成片", "15 个答辩问题预案", "22 个板块的中德文化交流素材库"],
+      deliverables: ["14 页中德双语 PPT", "德文定稿演讲稿", "3–5 分钟德语演讲视频（配德语字幕）", "初赛资料包（视频 + 讲稿 + PPT，2026.10.09 提交）", "15 个答辩问题预案", "22 个板块的中德文化交流素材库"],
       sources: ["中华人民共和国外交部", "同济大学", "Pew Research Center", "新华网"],
       resources: [
-        { label: "参赛 PPT 完整版", kind: "doc", path: "assets/sources/competitions/德语之星参赛PPT.pdf", note: "《承载歌声的翅膀，共建友谊的桥梁》决赛演示文稿，由 17.7 MB 原始 PPT 导出为 14 页 PDF，浏览器内可直接翻看" },
-        { label: "德语之星 · 飞书导出 PDF", kind: "doc", path: "assets/sources/competitions/德语之星.pdf", note: "含最终安排、13 页 PPT 结构与 15 个答辩问题" },
+        { label: "参赛 PPT（10.09 提交组委会版）", kind: "doc", path: "assets/sources/competitions/德语之星参赛PPT（最终提交版）.pdf", note: "14 页演示文稿 · 按组委会要求导出为 PDF，浏览器内可直接翻看" },
+        { label: "德文演讲稿（提交定稿）", kind: "doc", path: "assets/sources/competitions/德语之星演讲稿（德文定稿）.docx", note: "以德国伯乐中文合唱团故事切入的完整讲稿，为提交组委会的 Word 原版" },
+        { label: "组委会报名表（脱敏）", kind: "doc", path: "assets/sources/competitions/德语之星报名表（脱敏）.docx", note: "深圳技术大学代表队正式报名凭证：4 名队员与带队老师构成、中德双语演讲题目、赛事要求；手机号与微信号已遮蔽" },
+        { label: "德语之星 · 飞书导出 PDF", kind: "doc", path: "assets/sources/competitions/德语之星.pdf", note: "备赛过程文档：最终安排、PPT 结构与 15 个答辩问题预案" },
         { label: "中德文化交流素材库 · 完整整合版", kind: "html", path: "assets/sources/competitions/中德文化交流素材库_完整整合版.html", note: "团队共建备赛资料：22 个主题板块、中德对照的事例与论据（教育、友好城市、体育、企业产业、影视媒体、汉学与翻译等），附论据可视化年报与数据卡片" }
       ],
       workId: "german-star"
